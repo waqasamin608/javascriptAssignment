@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+<script>
+
+// ///////////////////////////////////////////Task 1/////////////////////////////////////////////////////
+
+                                                    //   1. Write a program that takes two user inputs for first and
+                                                    // last name using prompt and merge them in a new variable
+                                                    // titled fullName. Greet the user using his full name.
+
+                                                    // solution
+
+// var firstName = prompt("Enter your first Name");
+// var secondName = prompt("Enter your Second name");
+
+// var fullName = firstName + secondName;
+// document.write("Wellcome to " + fullName);
+
+
+                                                                            // Task 2
+
+                                                                            // 2. Write a program to take a user input about his favorite
+                                                                            // mobile phone model. Find and display the length of user
+                                                                            // input in your browser
+
+                                                                            // Solution
+
+
+// var mobileModel = prompt("Enter your Mobile Model ");
+// var n = mobileModel.length;
+// document.write("My Fav Mobile is: " + mobileModel + " and the Length is " +  n);
+
+
+                                                                                // Task 3 
+
+                                                                                // 3. Write a program to find the index of letter “n” in the word
+                                                                                // “Pakistani” and display the result in your browser
+
+                                                                                // solution
+
+    // var city = "Pakistani";
+     
+    // for(i = 0; i <=city.length; i++){
+    //    if(city[i] === "n"){
+    //        document.write(city.indexOf("n"));
+    //    }
+    // }                                                                       
+
+                                                                                // Task 4 
+                                                                                // 4. Write a program to find the last index of letter “l” in the
+                                                                                // word “Hello World” and display the result in your browser.
+
+                                                                                // solution
+
+// var a = "Hello World"
+
+// var b = a.lastIndexOf("l");
+// document.write("The last index of " + b);
+
+
+
+                                                                                // Task 5
+
+                                                                                // 5. Write a program to find the character at 3rd index in the
+                                                                                // word “Pakistani” and display the result in your browser.
+
+                                                                                // solution
+
+// var word = "pakistani";
+// var findWord = word.charAt(3);
+// document.write("The third word of " + word + " is: " + findWord);
+
+
+                                                                            // Task 6 
+
+                                                                            // 6. Repeat Q1 using string concat() method
+
+                                                                            // solution
+
+// var str1 = "Hello ";
+// var str2 = "world";
+// var mergeStr = str1.concat(str2);
+// document.write(mergeStr);
+
+                                                                            // Task 7
+
+                                                                            // 7. Write a program to replace the “Hyder” to “Islam” in the
+                                                                            // word “Hyderabad” and display the result in your browser.
+
+                                                                            // Solution
+
+// var a = "Hyderabad";
+// var b = a.replace(a , "Islam");
+// document.write(b);
+
+                                                                            // Task 8 
+
+                                                                            // 8. Write a program to replace all occurrences of “and” in the
+                                                                            // string with “&” and display the result in your browser.
+                                                                            // var message = “Ali and Sami are best friends. They play cricket and
+                                                                            // football together.”;
+
+
+                                                                            // solution
+
+
+
+// var para = "Ali and Sami are best friends. They play cricket and  football together.";
+// var b = para.replace(/and/g , "&");
+// document.write(b);
+
+                                                                            // Task 9 
+
+                                                                            // 9. Write a program that converts a string “472” to a number
+                                                                            // 472. Display the values & types in your browser.
+
+                                                                            // solution
+
+// var str = "472"
+// document.write("The Type of " +  typeof(str) +" " + str + "<br>");
+// var convertToNum = parseInt(str);
+// document.write("The Type of " +  typeof(convertToNum) +" " + str);
+
+
+
+                                                                            // Task 10 
+
+                                                                            // 10. Write a program that takes user input. Convert and
+                                                                            // show the input in capital letters.
+
+                                                                            // solution
+
+    //  var input = prompt("Enter your Name to Small Letters ");
+
+    //  var convertto_sm_L = input.toUpperCase(input);
+    //  document.write( "You are Enter a: " + input + " and convert to a upprCase: " + convertto_sm_L);                                                                      
+
+
+
+                                                                            // Task 11 
+
+                                                                            // 11. Write a program that takes user input. Convert and
+                                                                            // show the input in title case.
+
+                                                                            // solution
+
+
+
+    //     var user_input = prompt("Enter your tittle Name");
+
+    //     var  convertName = user_input.slice(0, 1);
+    //     var c = convertName.toUpperCase(convertName);
+    //   var d = c + user_input.slice(1);
+    //     document.write("Tittle Case is active " + d);
+
+                                                                            // Task 12 
+
+                                                                            // 12. Write a program that converts the variable num to
+                                                                            // string.
+                                                                            // var num = 35.36 ;
+                                                                            // Remove the dot to display “3536” display in your browser.
+
+                                                                            // solution
+
+
+// var num = 35.36;
+// var a = num.toString();
+// document.write(a.replace("." , ""));
+
+
+                                                                            // Task 13
+
+                                                                            // 13. Write a program to take user input and store username
+                                                                            // in a variable. If the username contains any special symbol
+                                                                            // among [@ . , !], prompt the user to enter a valid username.
+                                                                            // For character code
+
+                                                                            // solution
+
+// var input = prompt("Enter user Name");
+
+// var a = new RegExp('[^0-9a-zA-Z-,_.\:\s]+$') ;
+// var b = a.test(input);
+
+// if(input.length > 0 && b === true){
+//     alert("Please enter a correct name");
+//     alert("Please Do Not using special Characters")
+// }
+
+                                                                            // Task 14
+
+                                                                            // 15. Write a program to take password as an input from
+                                                                            // user. The password must qualify these requirements:
+                                                                            // a. It should contain alphabets and numbers
+                                                                            // b. It should not start with a number
+                                                                            // c. It must at least 6 characters long
+                                                                            // If the password does not meet above requirements,
+                                                                            // prompt the user to enter a valid password.
+                                                                            // For character codes of a-z, A-Z & 0-9, refer to ASCII
+                                                                            // table at the end of this document.
+
+
+                                                                            // solution
+
+
+
+
+
+
+
+//     var pass = prompt("Enter your Password");
+// var letters = /^[a-zA-Z]+$/;
+// if(pass.match(letters))
+// {
+//     alert('input contains letters only');
+// }else
+// {
+//     alert('invalid input');
+// }
+                                                                        
+                                                                    // Task 15 
+
+                                                                    // 16. Write a program to convert the following string to an
+                                                                    // array using string split method.
+                                                                    // var university = “University of Karachi”;
+
+                                                                    // solution
+// var university = 'University of karachi';
+// var a = university.split('');
+// for(var i = 0 ; i < a.length ; i++ ){
+//     document.write(a[i]+ '<br>')
+// }
+    
+
+                                                                    //     Task 16
+
+                                                                    //     17. Write a program to display the last character of a user
+                                                                    // input.
+
+                                                                    // solution
+
+    // var a = prompt("Enter your Name ");
+    // var b = a.charAt(a.length -1);
+    // document.write(b);
+
+                                                                    // Task 17
+
+                                                                    // 18. You have a string “The quick brown fox jumps over the
+                                                                    // lazy dog”. Write a program to count number of
+                                                                    // occurrences of word “the” in given string.
+
+                                                                    // solution
+
+    // var a = "The quick brown fox jumps over the lazy dog";
+    //     var b = a.toLowerCase();
+    // var c = (b.match(/the/g) || []).length;
+    // document.write(c);
+
+
+
+
+
+var a = 10.95;
+a = Math.round(a);
+console.log(a);
+var c = a.toFixed();
+console.log(c);
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>

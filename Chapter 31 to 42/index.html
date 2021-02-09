@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // :::::::::::::::::::::::::::::::::::::: Chapter 31 to 38 :::::::::::::::::::::::::;;;
+        
+/////////////////////////////////////////// Task 1 ///////////////////
+// 1. Write a program that displays current date and time in
+// your browser.
+/////////////////////////////////////////////////// Solution /////////////////////
+// var currenDate = new Date();
+// console.log(currenDate);
+
+//////////////////////////////////////////////// Task 2 //////////////////////
+// 2. Write a program that alerts the current month in words.
+// For example December.
+/////////////////////////////////////////////// Solution //////////////////
+// var month = ["Jun", "Feb", "March", "April","May", "June", "Jul", "Aug", "Sep", "Oct", "Nov","December"];
+// var currentMonth = new Date();
+// var b = currentMonth.getMonth();
+// var c = month[b];
+// console.log(c);
+
+///////////////////////////////////////////////////// Task 3 ////////////////////////////////////////
+// 3. Write a program that alerts the first 3 letters of the current
+// day, for example if today is Sunday then alert will show
+// Sun
+
+/////////////////////////////////////////////////// Solution ///////////////////////////////
+//  var dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+//  var now = new Date();
+// var theDay = now.getDay();
+//  var nameOfToday = dayNames[theDay];
+// console.log(nameOfToday);
+////////////////////////////////////////////////////////////////// Task 4 ///////////////////////
+// 4. Write a program that displays a message “It’s Fun day” if
+// its Saturday or Sunday today.
+///////////////////////////////////////////////////// Solution ////////////////////////
+// var a = new Date();
+// var dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+// var b = dayNames[a.getDay()];
+// if(b === "Sat" || b === "Sun"){
+//     console.log("Its Fun Day")
+// }else{
+//     console.log("its working day")
+// }
+
+///////////////////////////////////////////////////// Task 5 //////////////////////
+// 5. Write a program that shows the message “First fifteen
+// days of the month” if the date is less than 16th of the month
+// else shows “Last days of the month”.
+//////////////////////////////////////////////////// Solution /////////////////////
+// var a = new Date();
+// var b = a.getDate();
+// if(b >= 16){
+//     console.log("First day");
+// }else{
+//     console.log("Second day")
+// }
+///////////////////////////////////////////////// ///////////////Task 6 ///////////////////////
+// 6. Write a program that determines the minutes since
+// midnight, Jan. 1, 1970 and assigns it to a variable that
+// hasn't been declared beforehand. Use any variable you like
+// to represent the Date object.
+//////////////////////////////////////////////////////////////// Solution ///////////////////////
+// var a = new Date("Jan 1, 1970");
+// var b = a.getMinutes();
+// console.log(b)
+//////////////////////////////////////////////////////////////// Task 7 ///////////////////
+// 7. Write a program that tests whether it's before noon and
+// alert “Its AM” else “its PM”.
+//////////////////////////////////////////////////////////////// Solution ///////////////
+// var a = new Date();
+// var b = a.getTime();
+// if(b <= 12){
+//     console.log("It's AM")
+// }else{
+//     console.log("it's PM")
+// }
+/////////////////////////////////////////////////////////////////////////// Task 8 /////////////////////
+// 8. Write a program that creates a Date object for the last day
+// of the last month of 2020 and assigns it to variable named
+// laterDate.
+///////////////////////////////////////////////////////////////////////// Solution /////////////////////
+// var d = new Date();
+//  d.setMonth(11,31);
+//  console.log(d)
+////////////////////////////////////////////////////////////////////////// Task 9 ////////////////////
+// 9. Create a date object of the starting date of this Ramadan
+// and alert the number of days past since 1st Ramadan?
+// Note: 1st Ramadan was on June 18, 2015
+////////////////////////////////////////////////////////////////////////// Solution ////////////////
+
+
+///////////////////// Task 1 ////////////////////// Ch 35 to 38 /////////////////////////////
+// 1. Write a function that displays current date & time in your
+// browser.
+//////////////////////// Solution /////////////////////////////
+// function currenDat(){
+//   console.log(new Date());
+// }
+// currenDat();
+///////////////////////////////////////// Task 2 /////////////////////////
+// Write a function that takes first & last name and then it
+// greets the user using his full name.
+//////////////////////////////////////////// Solution //////////////////
+// function names(firstName, secondName){
+//     return firstName + " " + secondName
+
+// }
+// var c = names("waqas", "amin");
+// console.log("Great " + c);
+//////////////////////////////////////////// Task 3 //////////////////////
+// . Write a function that adds two numbers (input by user)
+// and returns the sum of two numbers.
+////////////////////////////////////////////// Solution ////////////////////
+// function total(num1, num2){
+//     var num1 = +prompt("enter first");
+//     var num2 = +prompt("enter second");
+//     return num1  + num2;
+// }
+// console.log(total());
+///////////////////////////////// Task 3 //////////////
+// Write a function that takes three arguments num1, num2
+// & operator & compute the desired operation. Return and
+// show the desired result in your browser.
+/////////////////////////////////////////////////////// ///////////////// Solution ///////////////////////
+// function calc(num1, oper, num2){
+//     num1 = +prompt("First Number");
+//     oper = prompt("Enter Operator");
+//     num2 = +prompt("Second Number");
+//     if(oper === "+"){
+//         return num1 + num2
+//     }else if(oper === "-"){
+//         return num1 - num2
+//     }else if(oper === "*"){
+//         return num1 * num2
+//     }else if(oper === "/"){
+//         return num1 / num2
+//     }else{
+//         return "Enter Correct information"
+//     }
+// }
+// console.log(calc());
+///////////////////////////////////// Task 4 ///////////////////////
+
+// Write a function that squares its argument.
+/////////////////////////////////////////////////////// Solution ///////////////////
+// function squares(a){
+//     var a = +prompt("enter num");
+//     var b = Math.sqrt(a);
+//     console.log(b);
+// }
+// squares();
+//////////////////////////////////// Task 6 //////////////////////////////
+// Write a function that computes factorial of a number
+////////////////////////////////////////////////////////// Solution ////////////////
+// var number = parseInt(prompt('Enter a positive integer: '));
+// if (number < 0) {
+//     console.log('Error! Factorial for negative number does not exist.');
+// }else if (number === 0) {
+//     console.log(`The factorial of ${number} is 1.`);
+// }else {
+//     let fact = 1;
+//     for (i = 1; i <= number; i++) {
+//         fact *= i;
+//     }
+//     console.log(`The factorial of ${number} is ${fact}.`);
+// }
+////////////////////////////////////////////////////// Task 7 /////////////////////
+// Write a function that take start and end number as inputs
+// & display counting in your browser.
+///////////////////////////////////////// Solution //////////////////////////
+// function myFunc(startNumber, endNumber){
+//     var startNumber = +prompt("Enter a Number You can Start")
+//    var endNumber = +prompt("Enter a Number You can Start")
+//     for(i = startNumber; i<= endNumber; i++){
+//         document.write(i)
+//         document.write("<br>");
+//     }
+// }
+// myFunc();
+///////////////////////////////////// Task 8 //// Chapter 35 to 38 ///////////////////////
+// Write a nested function that computes hypotenuse of a
+// right angle triangle.
+// Hypotenuse2 = Base2 + Perpendicular2
+///////////////////////////////////////////////////////// Solution /////////////////////
+
+
+
+////////////////////////////////// Task 9 ////////////////////////////
+// Write a function that calculates the area of a rectangle.
+//  A = width * height
+//  Pass width and height in following manner:
+// i. Arguments as value
+// ii. Arguments as variables
+///////////////////////////////////////////////////// Solution ////////////////////
+// function totalArea(width, height = 10){
+//     var calculates = width * height;
+//     document.write("The Total area is " + calculates);
+// }
+// totalArea(20);
+//////////////////////////////////// Task 10 ////////////////////////////////////
+// Write a JavaScript function that accepts a string as a
+// parameter and converts the first letter of each word of the
+// string in upper case.
+// EXAMPLE STRING : 'the quick brown fox'
+// EXPECTED OUTPUT : 'The Quick Brown Fox'
+///////////////////////////////////////////////////////////// Solution ////////////////////////
+// function titleCase(name){
+//         var name = "i am waqas amin"; 
+//         return name.replace(
+//             /\w\S*/g,
+//             function(txt) {
+//                 return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+//             }
+//         );
+//          }
+//     console.log(titleCase());
+// ::::::::::::::::::::::::::::::::::::::::::::::::::: Method 2 :::::::::::::::::::::::::
+// function toTitleCase(str) {
+//   str = str.toLowerCase().split(' ');
+//   for (var i = 0; i < str.length; i++) {
+//     str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
+//   }
+//   return str.join(' ');
+// }
+// console.log(toTitleCase("wELCOME tO w3DOCS"));
+//////////////////////////////////////////////////////// Task 12 /////////////////////////////
+// Write a JavaScript function that accepts a string as a
+// parameter and find the longest word within the string.
+// EXAMPLE STRING : 'Web Development Tutorial'
+// EXPECTED OUTPUT : 'Development'
+/////////////////////////////////////////////////////////////// Solution ////////////////////////////
+
+// const myString = `Web Development Tutorial`;
+ 
+ 
+// function findLongestWord(msg){
+//     msg = msg.split(' ');
+//     msg = msg.map(word => word.replace(/\./g, ''));    
+//     let longest = msg.reduce((current, previous)=>{
+//         return current.length > previous.length ? current : previous;
+//     }, "");
+//     return longest;
+// }
+ 
+// const result = findLongestWord(myString);
+ 
+// console.log(result);
+/////////////////// //////////////////////////////////////// Task 13 ////////////////////////
+// Write a JavaScript function that accepts two arguments, a
+// string and a letter and the function will count the number of 
+// occurrences of the specified letter within the string.
+// Sample arguments : 'JSResourceS.com', 'o'
+////////////////////////////////////////////////////// Solution ///////////////////////////
+// function char_count(str, letter) 
+// {
+//  var letter_Count = 0;
+//  for (var position = 0; position < str.length; position++) 
+//  {
+//     if (str.charAt(position) == letter) 
+//       {
+//       letter_Count += 1;
+//       }
+//   }
+//   return letter_Count;
+// }
+
+// console.log(char_count('w3resource.com', 'o'));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
